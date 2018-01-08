@@ -1,0 +1,16 @@
+#hadoop
+http://mirrors.hust.edu.cn/apache/hadoop/common/hadoop-2.7.5/hadoop-2.7.5.tar.gz
+#spark
+http://mirror.bit.edu.cn/apache/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz
+#scala
+https://downloads.lightbend.com/scala/2.12.4/scala-2.12.4.tgz
+#kafka-python
+https://pypi.python.org/packages/1f/a5/9331c3e83fb930259ae32b8dfc39dee1ac8a3027f55b0e724371e0ad1f82/kafka-python-1.3.5.tar.gz#md5=0f39ada74cfc4c25402e689f41c33760
+#jstorm
+https://github.com/alibaba/jstorm/releases/download/2.1.1/jstorm-2.1.1.zip
+#flume
+http://mirror.bit.edu.cn/apache/flume/1.8.0/apache-flume-1.8.0-bin.tar.gz
+#hbase
+http://mirror.bit.edu.cn/apache/hbase/1.3.1/hbase-1.3.1-bin.tar.gz
+#hive
+http://mirror.bit.edu.cn/apache/hive/hive-2.1.1/apache-hive-2.1.1-bin.tar.gz
