@@ -1,1 +1,1 @@
-s212
+${hadoop.slaves}
