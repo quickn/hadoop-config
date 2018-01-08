@@ -20,17 +20,17 @@
                 <hadoop.slaves>s212</hadoop.slaves>
                 <nimbus.host>192.168.1.212</nimbus.host>
                 <storm.zookeeper.servers>
-                    - "s211"
-                    - "s212"
+    - "s211"
+    - "s212"
                 </storm.zookeeper.servers>
                 <kafka.zookeeper.connect>s211:2181,s212:2181</kafka.zookeeper.connect>
                 <spark.slaves>
-                    s212
-                    s211
+s212
+s211
                 </spark.slaves>
                 <zookeeper.servers>
-                    server.1=s211:2287:3387
-                    server.2=s212:2287:3387
+server.1=s211:2287:3387
+server.2=s212:2287:3387
                 </zookeeper.servers>
             </properties>
             <!-- 如果不指定ID，默认是本地环境-->
