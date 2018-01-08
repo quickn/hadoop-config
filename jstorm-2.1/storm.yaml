@@ -1,0 +1,40 @@
+########### These MUST be filled in for a storm configuration
+ storm.zookeeper.servers:
+     - "sonka-199"
+     - "sonka-195"
+
+ storm.zookeeper.root: "/jstorm"
+
+# cluster.name: "default"
+
+ #nimbus.host/nimbus.host.start.supervisor is being used by $JSTORM_HOME/bin/start.sh
+ #it only support IP, please don't set hostname
+ # For example
+ # nimbus.host: "10.132.168.10, 10.132.168.45"
+ #nimbus.host: "localhost"
+ #nimbus.host.start.supervisor: false
+
+ nimbus.host: "192.168.1.199"
+ nimbus.childopts: "-Xms768m -Xmx768m -Xmn768m -XX:SurvivorRatio=4 -XX:MaxTenuringThreshold=15 -XX:+UseConcMarkSweepGC  -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=70 -XX:+HeapDumpOnOutOfMemoryError -XX:CMSMaxAbortablePrecleanTime=5000"
+
+# %JSTORM_HOME% is the jstorm home directory
+ storm.local.dir: "%JSTORM_HOME%/data"
+
+ supervisor.slots.ports:
+    - 6800
+    - 6801
+#    - 6802
+#    - 6803
+
+ worker.memory.size: 547483648
+
+# UI MultiCluster
+# Following is an example of multicluster UI configuration
+# ui.clusters:
+#     - {
+#         name: "jstorm",
+#         zkRoot: "/jstorm",
+#         zkServers:
+#             [ "localhost"],
+#         zkPort: 2181,
+#       }
