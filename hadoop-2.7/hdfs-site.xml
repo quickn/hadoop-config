@@ -23,15 +23,15 @@
     </property> 
     <property> 
         <name>dfs.namenode.secondary.http-address</name> 
-        <value>${master}:50090</value>
+        <value>${hadoop.master}:50090</value>
     </property> 
      <property> 
          <name>dfs.namenode.name.dir</name> 
-         <value>/data/hadoop2.7/dfs/name</value> 
+         <value>/data/apps/hadoop2.7/dfs/name</value>
      </property> 
      <property> 
          <name>dfs.datanode.data.dir</name> 
-         <value>/data/hadoop2.7/dfs/data</value> 
+         <value>/data/apps/hadoop2.7/dfs/data</value>
      </property> 
      <property> 
          <name>dfs.replication</name> 

@@ -15,8 +15,8 @@
             <id>local</id>
             <properties>
                 <env>local</env>
-                <brokerList>s212:9092</brokerList>
-                <master>s212</master>
+                <flume.brokerList>s212:9092</flume.brokerList>
+                <hadoop.master>s212</hadoop.master>
                 <hadoop.slaves>s212</hadoop.slaves>
                 <nimbus.host>192.168.1.212</nimbus.host>
                 <storm.zookeeper.servers>
@@ -42,8 +42,8 @@ server.2=s212:2287:3387
             <id>testlocal</id>
             <properties>
                 <env>testlocal</env>
-                <brokerList>master:9092</brokerList>
-                <master>master</master>
+                <flume.brokerList>master:9092</flume.brokerList>
+                <hadoop.master>master</hadoop.master>
                 <hadoop.slaves>master</hadoop.slaves>
                 <nimbus.host>"192.168.1.199"</nimbus.host>
                 <storm.zookeeper.servers>
@@ -62,34 +62,11 @@ server.2=slave1:2287:3387
             </properties>
         </profile>
         <profile>
-            <id>test</id>
-            <properties>
-                <env>test</env>
-                <brokerList>s212:9092</brokerList>
-                <master>s212</master>
-                <hadoop.slaves>s212</hadoop.slaves>
-                <nimbus.host>192.168.1.212</nimbus.host>
-                <storm.zookeeper.servers>
-                    - "s211"
-                    - "s212"
-                </storm.zookeeper.servers>
-                <kafka.zookeeper.connect>s211:2181,s212:2181</kafka.zookeeper.connect>
-                <spark.slaves>
-                    s212
-                    s211
-                </spark.slaves>
-                <zookeeper.servers>
-                    server.1=s211:2287:3387
-                    server.2=s212:2287:3387
-                </zookeeper.servers>
-            </properties>
-        </profile>
-        <profile>
             <id>pro</id>
             <properties>
                 <env>pro</env>
-                <brokerList>s212:9092</brokerList>
-                <master>s212</master>
+                <flume.brokerList>sonka-70:9092</flume.brokerList>
+                <hadoop.master>s212</hadoop.master>
                 <hadoop.slaves>s212</hadoop.slaves>
                 <nimbus.host>192.168.1.212</nimbus.host>
                 <storm.zookeeper.servers>

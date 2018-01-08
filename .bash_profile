@@ -22,6 +22,7 @@ export HADOOP_HOME=$SRC/hadoop-2.7.5
 export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
+export hadoop.log.dir=$APP/hadoop-2.7/logs
 
 export ZOO_HOME=$SRC/zookeeper-3.4.10
 export PATH=$ZOO_HOME/bin:$PATH
