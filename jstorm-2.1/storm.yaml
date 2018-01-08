@@ -1,7 +1,7 @@
 ########### These MUST be filled in for a storm configuration
  storm.zookeeper.servers:
-     - "sonka-199"
-     - "sonka-195"
+     - "s211"
+     - "s212"
 
  storm.zookeeper.root: "/jstorm"
 
@@ -14,7 +14,7 @@
  #nimbus.host: "localhost"
  #nimbus.host.start.supervisor: false
 
- nimbus.host: "192.168.1.199"
+ nimbus.host: "192.168.1.212"
  nimbus.childopts: "-Xms768m -Xmx768m -Xmn768m -XX:SurvivorRatio=4 -XX:MaxTenuringThreshold=15 -XX:+UseConcMarkSweepGC  -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=70 -XX:+HeapDumpOnOutOfMemoryError -XX:CMSMaxAbortablePrecleanTime=5000"
 
 # %JSTORM_HOME% is the jstorm home directory

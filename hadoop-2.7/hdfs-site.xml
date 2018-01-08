@@ -23,7 +23,7 @@
     </property> 
     <property> 
         <name>dfs.namenode.secondary.http-address</name> 
-        <value>master:50090</value> 
+        <value>s212:50090</value> 
     </property> 
      <property> 
          <name>dfs.namenode.name.dir</name> 
