@@ -13,6 +13,8 @@ export PATH
 export SRC="/data/local/src"
 export LOCAL="/data/local"
 export APP="/data/apps"
+export DEV=${dev}
+export JAVA_DATA=/data/java_v2
 
 export JAVA_HOME=$SRC/java
 export PATH=$JAVA_HOME/bin:$PATH
@@ -22,13 +24,14 @@ export HADOOP_HOME=$SRC/${hadoop.version}
 export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
-export hadoop.log.dir=$APP/hadoop-2.7/logs
+export hadoop.log.dir=$APP/${hadoop.version}/logs
+
+
+export TOMCAT_HOME=$SRC/${tomcat.version}
+export PATH=$TOMCAT_HOME/bin:$PATH
 
 export ZOO_HOME=$SRC/${zookeeper.version}
 export PATH=$ZOO_HOME/bin:$PATH
-
-export STORM_HOME=$SRC/storm
-export PATH=$STORM_HOME/bin:$PATH
 
 export JSTORM_HOME=$SRC/${jstorm.version}
 export PATH=$JSTORM_HOME/bin:$PATH

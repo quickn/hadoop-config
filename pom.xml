@@ -12,7 +12,7 @@
         <profile>
             <id>local</id>
             <properties>
-
+                <dev>local</dev>
                 <jdk.version>jdk1.8.0_131</jdk.version>
                 <maven.version>apache-maven-3.5.2</maven.version>
                 <tomcat.version>apache-tomcat-8.5.24</tomcat.version>
@@ -52,6 +52,7 @@ server.2=s212:2287:3387
         <profile>
             <id>testlocal</id>
             <properties>
+                <dev>testlocal</dev>
                 <jdk.version>jdk1.8.0_131</jdk.version>
                 <maven.version>apache-maven-3.5.2</maven.version>
                 <tomcat.version>apache-tomcat-8.5.24</tomcat.version>
@@ -87,6 +88,7 @@ server.2=slave1:2287:3387
         <profile>
             <id>pro</id>
             <properties>
+                <dev>pro</dev>
 
                 <jdk.version>jdk1.8.0_131</jdk.version>
                 <maven.version>apache-maven-3.5.2</maven.version>
