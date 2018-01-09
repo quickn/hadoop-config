@@ -20,6 +20,9 @@ export JAVA_HOME=$LOCAL/${jdk.version}
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
+export MAVEN_HOME=$LOCAL/${mvn.version}
+export PATH=$MAVEN_HOME/bin:$PATH
+
 export HADOOP_HOME=$SRC/${hadoop.version}
 export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
@@ -47,9 +50,6 @@ export PATH=$FLUME_HOME/bin:$PATH
 
 export KAFKA_HOME=$SRC/${kafka.version}
 export PATH=$KAFKA_HOME/bin:$PATH
-
-export MAVEN_HOME=$SRC/${mvn.version}
-export PATH=$MAVEN_HOME/bin:$PATH
 
 export SCALA_HOME=$SRC/${scala.version}
 export PATH=$SCALA_HOME/bin:$PATH
