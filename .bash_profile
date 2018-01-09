@@ -16,7 +16,7 @@ export APP="/data/apps"
 export DEV=${dev}
 export JAVA_DATA=/data/java_v2
 
-export JAVA_HOME=$SRC/java
+export JAVA_HOME=$LOCAL/${jdk.version}
 export PATH=$JAVA_HOME/bin:$PATH
 export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 
