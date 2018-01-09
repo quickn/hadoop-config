@@ -27,11 +27,11 @@
     </property> 
      <property> 
          <name>dfs.namenode.name.dir</name> 
-         <value>/data/apps/hadoop2.7/dfs/name</value>
+         <value>/data/apps/${hadoop.version}/dfs/name</value>
      </property> 
      <property> 
          <name>dfs.datanode.data.dir</name> 
-         <value>/data/apps/hadoop2.7/dfs/data</value>
+         <value>/data/apps/${hadoop.version}/dfs/data</value>
      </property> 
      <property> 
          <name>dfs.replication</name> 

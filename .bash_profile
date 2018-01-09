@@ -33,8 +33,6 @@ export HADOOP_HOME=$SRC/${hadoop.version}
 export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib"
-export hadoop.log.dir=$APP/${hadoop.version}/logs
-
 
 export TOMCAT_HOME=$SRC/${tomcat.version}
 export PATH=$TOMCAT_HOME/bin:$PATH
