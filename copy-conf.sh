@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cp -rf ~/hadoop-config/apache-maven-3.3/* $SRC/${maven.version}/conf/
+cp -rf ~/hadoop-config/apache-maven-3.3/* $SRC/${mvn.version}/conf/
 cp -rf ~/hadoop-config/target/classes/hadoop-2.7/* $src/${hadoop.version}/etc/hadoop/
 cp -rf ~/hadoop-config/target/classes/spark-2.2/* $src/${spark.version}/conf/
 
