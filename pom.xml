@@ -137,7 +137,7 @@ server.2=sonka-10:2287:3387
                     <include>kafka_2.1/**</include>
                     <include>spark-2.2/**</include>
                     <include>zookeeper-3.4/**</include>
-                    <include>bash_profile</include>
+                    <include>.bash_profile</include>
                     <include>copy-conf.sh</include>
                 </includes>
                 <filtering>true</filtering>
