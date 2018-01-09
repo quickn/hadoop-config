@@ -48,7 +48,7 @@ export PATH=$FLUME_HOME/bin:$PATH
 export KAFKA_HOME=$SRC/${kafka.version}
 export PATH=$KAFKA_HOME/bin:$PATH
 
-export MAVEN_HOME=$SRC/${maven.version}
+export MAVEN_HOME=$SRC/${mvn.version}
 export PATH=$MAVEN_HOME/bin:$PATH
 
 export SCALA_HOME=$SRC/${scala.version}
