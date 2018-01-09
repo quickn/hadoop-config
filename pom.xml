@@ -8,13 +8,19 @@
     <artifactId>hadoop-config</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-
     <profiles>
         <profile>
             <id>local</id>
             <properties>
                 <env>local</env>
+
+                <hadoop.version>hadoop-2.7.5</hadoop.version>
+                <spark.version>spark-2.2.1-bin-hadoop2.7</spark.version>
+                <scala.version>scala-2.12.4</scala.version>
+                <zookeeper.version>zookeeper-3.4.10</zookeeper.version>
+                <kafka.version>kafka_2.12-1.0.0</kafka.version>
+                <flume.version>flume-1.8.0</flume.version>
+
                 <flume.brokerList>s212:9092</flume.brokerList>
                 <hadoop.master>s212</hadoop.master>
                 <hadoop.slaves>s212</hadoop.slaves>
@@ -42,6 +48,14 @@ server.2=s212:2287:3387
             <id>testlocal</id>
             <properties>
                 <env>testlocal</env>
+
+                <hadoop.version>hadoop-2.7.5</hadoop.version>
+                <spark.version>spark-2.2.1-bin-hadoop2.7</spark.version>
+                <scala.version>scala-2.12.4</scala.version>
+                <zookeeper.version>zookeeper-3.4.10</zookeeper.version>
+                <kafka.version>kafka_2.12-1.0.0</kafka.version>
+                <flume.version>flume-1.8.0</flume.version>
+
                 <flume.brokerList>master:9092</flume.brokerList>
                 <hadoop.master>master</hadoop.master>
                 <hadoop.slaves>master</hadoop.slaves>
@@ -65,22 +79,30 @@ server.2=slave1:2287:3387
             <id>pro</id>
             <properties>
                 <env>pro</env>
+
+                <hadoop.version>hadoop-2.7.5</hadoop.version>
+                <spark.version>spark-2.2.1-bin-hadoop2.7</spark.version>
+                <scala.version>scala-2.12.4</scala.version>
+                <zookeeper.version>zookeeper-3.4.10</zookeeper.version>
+                <kafka.version>kafka_2.12-1.0.0</kafka.version>
+                <flume.version>flume-1.8.0</flume.version>
+
                 <flume.brokerList>sonka-70:9092</flume.brokerList>
                 <hadoop.master>s212</hadoop.master>
                 <hadoop.slaves>s212</hadoop.slaves>
                 <nimbus.host>192.168.1.212</nimbus.host>
                 <storm.zookeeper.servers>
-                    - "s211"
-                    - "s212"
+                    - "master"
+                    - "slave1"
                 </storm.zookeeper.servers>
-                <kafka.zookeeper.connect>s211:2181,s212:2181</kafka.zookeeper.connect>
+                <kafka.zookeeper.connect>master:2181,slave1:2181</kafka.zookeeper.connect>
                 <spark.slaves>
-                    s212
-                    s211
+                    master
+                    slave1
                 </spark.slaves>
                 <zookeeper.servers>
-                    server.1=s211:2287:3387
-                    server.2=s212:2287:3387
+                    server.1=master:2287:3387
+                    server.2=slave1:2287:3387
                 </zookeeper.servers>
             </properties>
         </profile>
