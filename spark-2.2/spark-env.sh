@@ -61,3 +61,7 @@
 # - SPARK_IDENT_STRING  A string representing this instance of spark. (Default: $USER)
 # - SPARK_NICENESS      The scheduling priority for daemons. (Default: 0)
 # - SPARK_NO_DAEMONIZE  Run the proposed command in the foreground. It will not output a PID file.
+
+export JAVA_HOME=/data/local/${jdk.version}
+export SCALA_HOME=/data/local/${scala.version}
+export HADOOP_HOME=/data/local/src/${hadoop.version}
