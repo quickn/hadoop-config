@@ -65,3 +65,4 @@
 export JAVA_HOME=/data/local/${jdk.version}
 export SCALA_HOME=/data/local/${scala.version}
 export HADOOP_HOME=/data/local/src/${hadoop.version}
+export HADOOP_CONF_DIR=/data/local/src/${hadoop.version}/etc/hadoop/
